@@ -37,7 +37,7 @@ const options = {
   },
 };
      
-const flatpickr = flatpickr(input, options);
+const fp = flatpickr(input, options);
 
 function startIntervalOnClick() {
   timerId = setInterval(() => {

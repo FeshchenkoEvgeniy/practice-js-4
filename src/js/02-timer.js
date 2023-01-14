@@ -1,15 +1,15 @@
 import flatpickr from "flatpickr";
 import Notiflix from 'notiflix';
 import "flatpickr/dist/flatpickr.min.css";
-console.log(123)
 const refs = {
-    input: document.querySelector("#datetime-picker"),
     startBtn: document.querySelector("button[data-start]"),
     timeDay: document.querySelector("span[data-days]"),
     timeHours: document.querySelector("span[data-hours]"),
     timeMinutes: document.querySelector("span[data-minutes]"),
     timeSeconds: document.querySelector("span[data-seconds]"),
 }
+
+const input = document.querySelector("#datetime-picker");
 
 let timerId = null;
 let selectedDate = 0;
@@ -37,7 +37,7 @@ const options = {
   },
 };
      
-const flatpickr = flatpickr(refs.input, options);
+const flatpickr = flatpickr(input, options);
 
 function startIntervalOnClick() {
   timerId = setInterval(() => {

@@ -16,13 +16,13 @@ function onClick(evt) {
   // for(let i = 0; i < amount.value; i +=1 ){
   //   counterPosition += 1
     // stepCounter = delay.value + step.value;
-    createPromise(step.value, delay.value).then(({ step, delay }) => {
-    console.log(`✅ Fulfilled promise ${step} in ${delay}ms`);
-  })
-  .catch(({ step, delay }) => {
-    console.log(`❌ Rejected promise ${step} in ${delay}ms`);
-  });
-  // }
+  //   createPromise(step.value, delay.value).then(({ step, delay }) => {
+  //   console.log(`✅ Fulfilled promise ${step} in ${delay}ms`);
+  // })
+  // .catch(({ step, delay }) => {
+  //   console.log(`❌ Rejected promise ${step} in ${delay}ms`);
+  // });
+  // // }
 }
 
 function createPromise(position, delay) {

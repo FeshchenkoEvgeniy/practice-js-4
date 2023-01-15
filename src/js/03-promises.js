@@ -44,4 +44,3 @@ function onSuccess({ position, delay }) {
 function onError({ position, delay }) {
  Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
 };
-console.log("test123")

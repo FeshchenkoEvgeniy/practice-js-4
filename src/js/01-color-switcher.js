@@ -13,8 +13,8 @@ refs.saveBtn.addEventListener('click', clickToStop);
 refs.saveBtn.setAttribute("disabled", "disabled");
 
 function clickToStart() {
+    setAttributeToStart()
     timerId = setInterval(() => {
-       setAttributeToStart()
        refs.body.style.backgroundColor = getRandomHexColor();
     }, 1000);
 }
